@@ -9,7 +9,7 @@ function Checkout() {
     if (emailRef) {
       emailRef.focus();
     }
-  }, []);
+  }, [emailRef]);
 
   const saveData = (e) => {
     e.preventDefault();

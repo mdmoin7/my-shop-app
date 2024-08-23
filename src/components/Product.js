@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { ThemeContext } from "../context";
 import Card from "./Card";
 import useTheme from "../hooks/useTheme";
 import { Link } from "react-router-dom";
@@ -24,7 +22,7 @@ function Product(props) {
     <Card>
       <div style={{ color: txtColor }}>
         <Link to={`/detail/${data.productId}`}>
-          <img src={data.productImage} />
+          <img src={data.productImage} alt={data.productName} />
         </Link>
         <h5>{data.productName}</h5>
         <h6>
